@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-branding">
+            <h1>
+                <a href="index.html">Leighna</a>
+            </h1>
+        </div>
+        <nav class="site-navigation">
+            <ul>
+                <li class="selected">
+                    <a href="index.html#work" class="selected">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="hero">
+            <div class="image-wrapper">
+                <img src="img/homehero.png" alt="A happy place where delight meets design." width="3240" height="681">
+            </div>
+        </section>
+        <section id="work">
+
+            <div class="card-container">
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/hierrhero.jpg" alt="Hierr Logo" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="cropify.html">
+                            <h3>HIERR Logo</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/houpressedhero.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="cropify.html">
+                            <h3>Hou Pressed</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details>
+
+                </div>
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/SomethingLargeandWild_BookCover.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Book Covers</h3>
+                            <h4>Print Design</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/olympichero.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Olympic Pictograms</h3>
+                            <h4>Iconography</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/cropifyhero.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Cropify</h3>
+                            <h4>Mobile App</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/barcelona_church.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Tourism Logo</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details>
+
+                </div>
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/magazine.png" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Line, Form, Color Spread</h3>
+                            <h4>Print Design</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/weddinghero.jpg" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Tati & Matt Galizia Wedding</h3>
+                            <h4>Brand Identity, Print Design</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/goodpenhero.png" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Hou Pressed</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/illustrations.png" alt="placeholder" width="500" height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="google.com">
+                            <h3>Hou Pressed</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer fade-and-move-in">
+        <nav class="site-navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#work">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script>
+        /**
+     * Handle toggle events
+     * @param  {Event} event The Event object
+     */
+        function toggleHandler(event) {
+
+            // Only run if accordion is open
+            if (!event.target.hasAttribute('open')) return;
+
+            // Only run on accordions inside our selector
+            let parent = event.target.closest('[data-accordion]');
+            if (!parent) return;
+
+            // Get all open accordions inside parent
+            let opened = parent.querySelectorAll('details[open]');
+
+            // Close open ones that aren't current accordion
+            for (let accordion of opened) {
+                if (accordion === event.target) continue;
+                accordion.removeAttribute('open');
+            }
+
+        }
+
+        document.addEventListener('toggle', toggleHandler, true);
+    </script>
+</body>
+
+</html>
